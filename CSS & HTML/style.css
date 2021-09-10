@@ -1,0 +1,168 @@
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    to bottom right,
+    steelblue,
+    rgba(166, 212, 218, 0)
+  );
+  font-family: "Lato", "sans-serif";
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  color: black;
+}
+h2:hover {
+  color: red;
+}
+
+article ul {
+  list-style-type: none;
+  text-align: justify;
+}
+
+/*li:first-child{
+     color: green;
+ }*/
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  text-align: justify;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: ghostwhite;
+  padding: 10px;
+  text-align: justify;
+}
+aside {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: ivory;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.ozil {
+  width: 100%;
+  height: 500px;
+}
+
+.link {
+  text-decoration: underline;
+}
+.daybreak-img {
+  width: 100%;
+  height: auto;
+}
+.magna-aliqua {
+  font-style: italic;
+  color: red;
+}
+
+.container-item {
+  background: rgb(36, 130, 39);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+
+  width: 70px;
+  line-height: 50px;
+  margin: 10px;
+}
+.container {
+  background-color: rgb(250, 250, 250);
+  margin: 10px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container {
+  background-color: rgb(250, 250, 250);
+  margin: 10px;
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  /*grid-gap: 100px 150px;
+    justify-content: space-around;
+    align-content: space-between;*/
+}
+
+.grid-item {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+
+  width: 70px;
+  line-height: 40px;
+  margin: 10px;
+}
+.ozil-container {
+  background-color: rgb(55, 66, 66);
+  margin: 10px;
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: min-content;
+}
+.ozil-text {
+  color: ivory;
+  border: lavender 2px solid;
+  margin: 5px;
+  padding: 20px;
+  text-align: justify;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+.ozil-image {
+  height: 400px;
+  display: grid;
+}
+.form {
+  padding: 20px;
+  margin: 20px;
+}
+.submit-button {
+  background: #5886d1;
+  color: aliceblue;
+  padding: 10px;
+  border: none;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+}
+.submit-button:hover {
+  background: blue;
+  padding: 20px 30px;
+  font-size: large;
+}
+
+.wrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

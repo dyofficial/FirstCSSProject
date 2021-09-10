@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("hero.svg");
+  background-repeat: no-repeat;
+  margin: 5px;
+  padding: 5px;
+}
+#payments {
+  font-size: 10em;
+}
+li,
+a,
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+header {
+  border: 2px black solid;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  padding: 1vw;
+}
+.nav-links {
+  list-style: circle;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+  color: #734568;
+}
+button {
+  padding: 9px 25px;
+  background-color: #734568;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: #3a2b3b;
+  transition: all 0.3s ease 0s;
+}
+.stripe {
+  cursor: pointer;
+  font-size: x-large;
+  text-shadow: 2px 2px gray;
+}
+.sign-in {
+  justify-self: center;
+}
+.main-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  justify-items: center;
+}
+.main-container > div {
+  border: 1px black solid;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+/*.phone {
+  width: 10em;
+}*/
+/*@media screen and (max-width: 480px) {
+  li,
+  a,
+  button {
+    display: none;
+  }
+}*/
+@media screen and (max-width: 320px) {
+  header {
+    font-size: x-small;
+  }
+  .main-container {
+    display: flex;
+    font-size: small;
+    flex-wrap: wrap;
+    /*grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, auto);
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 100vh;
+    justify-content: center;*/
+  }
+  .container-2 {
+    display: none;
+  }
+}

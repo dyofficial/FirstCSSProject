@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: rgb(223, 236, 240);
+  height: 100vh;
+}
+.navbar {
+  background: rgb(206, 201, 192);
+  font-size: 20px;
+  margin-top: 0px;
+  /* padding: 10px 10px;*/
+  /*border: 1px solid black;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 5px 5px grey;
+}
+#header {
+  color: rgb(68, 98, 105);
+  font-size: medium;
+  margin: 10px;
+  padding: 5px;
+  /*border: 1px solid black;*/
+}
+.nav-links {
+  /* border: 1px solid black;*/
+  /* margin: 10px 10px;*/
+  padding: 10px 10px;
+}
+.nav-links li {
+  list-style: none;
+  display: inline;
+  padding: 30px;
+}
+.nav-links li a {
+  font-weight: 400;
+  color: rgb(68, 58, 58);
+  text-decoration: none;
+  font-size: medium;
+  letter-spacing: 2px;
+}
+.nav-links li a:hover {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: 3px 3px;
+  background: rgb(80, 83, 85);
+}
+.main-container {
+  /*display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  max-height: 100vh;
+  padding: 10px 10px ;*/
+  margin: auto;
+  width: 50%;
+  position: relative;
+  /* border: 3px solid white;*/
+  padding: 70px 0;
+}
+.bgcolor {
+  margin: auto;
+  border-radius: 5px;
+  padding: 70px 0px;
+  border: 10px solid white;
+  align-content: center;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px;
+}
+button {
+  color: aliceblue;
+  margin-top: 30px;
+  position: absolute;
+  top: 80%;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 20px;
+  margin-left: 40%;
+  border-radius: 5px;
+  background: rgba(107, 123, 128, 0.5);
+}
+button:hover {
+  background: rgb(62, 67, 70);
+  color: rgb(223, 233, 233);
+}
+
+@media only screen and (max-width: 325px) {
+  .navbar {
+    font-size: small;
+  }
+  button {
+    margin: 20px;
+  }
+  .bgcolor {
+    font-size: medium;
+  }
+  .nav-links li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+  }
+  .nav-links li a {
+    font-size: small;
+  }
+  #header {
+    font-size: smaller;
+  }
+}

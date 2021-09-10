@@ -1,0 +1,46 @@
+body {
+  background-image: url(poker-table-background-green-color_47243-1068.jpg);
+  background-size: cover;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  color: beige;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+h1 {
+  color: goldenrod;
+  font-size: 5vw;
+  font-weight: 2000;
+}
+#message-el {
+  font-style: italic;
+  font-size: 5vw;
+  color: antiquewhite;
+  font-weight: 1000;
+}
+button {
+  margin: 5px;
+  color: #016f32;
+  font-weight: bold;
+  width: 150px;
+  height: 30px;
+  background: goldenrod;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:hover {
+  background: yellow;
+}
+
+@media only screen and (max-width: 320px) {
+  #message-el {
+    font-size: 4vw;
+  }
+  body {
+    text-align: center;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("Fade-In-Background.svg");
+  background-size: cover;
+}
+header {
+  margin: 10px;
+  padding: 10px;
+  border: 1px white solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+li,
+a,
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f0f4f5;
+  font-weight: 100;
+  text-decoration: none;
+}
+button {
+  padding: 10px 20px;
+  background-color: #a39146;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.nav-links {
+  border: 1px white solid;
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+  background-color: #1cadb8;
+  transition: all 0.3s ease 0s;
+}
+.main-container {
+  background-color: #a39146;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-container > div {
+  border: 1px blanchedalmond solid;
+}
+.container-1 {
+  padding: 20px;
+  margin: 20px;
+  color: azure;
+  font-size: 6vw;
+  order: 1;
+}
+.container-1 {
+  flex-grow: ;
+  flex-grow: 1;
+  flex-basis: 60%;
+}
+.container-2 {
+  padding: 20px 20px;
+  order: 2;
+  flex-grow: 1;
+  flex-grow: ;
+  flex-basis: 30%;
+}
+.container-3 {
+  margin: 10px;
+  padding: 20px 20px;
+  order: 3;
+  flex-grow: 1;
+  flex-grow: ;
+  flex-basis: 60%;
+}
